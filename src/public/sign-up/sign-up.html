@@ -8,10 +8,10 @@
         <input type="text" class="form-control" name="firstName" placeholder="Enter First Name"
         ng-model="$signUpCtrl.user.firstName"
         required
-        minlength="2"
+        minlength="5"
         ng-maxlength="10">
         <span ng-if="(signUpForm.firstName.$error.minlength || signUpForm.firstName.$error.required) && signUpForm.firstName.$touched">
-          First Name must be at least 2 characters long
+          First Name must be at least 5 characters long
         </span>
         <span ng-if="signUpForm.firstName.$error.maxlength && signUpForm.firstName.$touched">
           First Name must not be longer than 10 characters
